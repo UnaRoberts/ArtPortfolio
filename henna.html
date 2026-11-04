@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henna Portfolio | Una Roberts</title>    
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="henna.css">
+
+</head>
+<body>
+  
+    <header><h1>Una Roberts</h1></header>
+
+<nav class="headercontainer">
+    <a href="home.html">HOME</a>
+    <a href="reel.html">ANIMATION</a>
+    <a href="about.html">ABOUT</a>
+    <a href="henna.html">HENNA</a>
+    <a href="MoreArt.html">MORE</a>
+    <a href="contact.html">CONTACT</a>
+</nav>
+
+
+<main>
+    <section class="intro">
+        <h2>Henna Portfolio</h2>
+        <p>
+            A collection of custom henna designs created on clients and practice surfaces.
+        </p>
+    </section>
+
+  <!--TODO
+-combine henna and roe art and have them be a tab under "MORE ART"
+maybe add arrows for the gallery?
+-->
+
+
+
+
+
+
+
+
+<div class="hennacontainer">
+  
+ 
+<img src="img_henna/Henna_img_01.JPG" alt="">
+    <img src="img_henna/Henna_img_02.JPG" alt="">
+    <img src="img_henna/Henna_img_03.JPG" alt="">
+
+   <img src="img_henna/Henna_img_04.JPG" alt="">
+    
+  <img src="img_henna/Henna_img_05.JPG" alt="">
+    
+    <img src="img_henna/Henna_img_06.JPG" alt="">
+
+   
+    <img src="img_henna/Henna_img_07.JPG" alt=""
+    data-description="Floral hand design. Approximately 30 minutes. Freehand work."
+       >
+
+    <img src="img_henna/Henna_img_08.JPG" alt="">
+
+    <img src="img_henna/Henna_img_09.JPG" alt="">
+    
+    <img src="img_henna/Henna_img_10.JPG" alt="">
+
+
+</div>
+
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+
+    <img id="lightbox-img" src="" alt="">
+
+    <p id="lightbox-description"></p>
+</div>
+
+<script>
+
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxDescription = document.getElementById("lightbox-description");
+
+document.querySelectorAll(".hennacontainer img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+
+        lightboxDescription.textContent =
+            img.dataset.description || "";
+    });
+});
+
+
+lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        lightbox.style.display = "none";
+    }
+});
+
+
+
+</script>
+
+
+</body>
+</html>

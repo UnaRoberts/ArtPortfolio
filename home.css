@@ -1,0 +1,59 @@
+.homecontainer {
+
+
+    
+  display: grid;
+  grid-template-columns: auto ;
+  
+}
+.homecontainer div {
+ 
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  padding-right: 70%;
+  padding-left: 50%;
+   color: #b6a9c6;
+  
+}
+
+
+a{
+  font-size: 50px;
+  text-decoration: none;  
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 20px;
+  text-align: center;
+  padding: 50px;
+
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 600px;
+  margin-right:  600px;
+}   
+
+.animation-link {
+    background-image: url("img_home/Animation.png"); 
+}
+
+.about-link {
+    background-image: url("img_home/Una\ Sketchbook\ Front\ Page\ Drawing.png");
+}
+
+.henna-link {
+    background-image: url("img_henna/Henna_img_03.JPG");
+}   
+
+.more-link {
+    background-image: url("img_henna/Henna_img_03.JPG");
+}   
+
+.contact-link {
+    background-image: url("img_henna/Henna_img_03.JPG");
+}
+

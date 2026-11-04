@@ -1,0 +1,32 @@
+.aboutcontainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 50px auto;
+  align-items: start;
+}
+
+.aboutcontainer div {
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+  padding: 20px;
+}
+
+.aboutcontainer img {
+    max-width: 100%;
+    height: auto;
+  border-radius: 15px;
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .aboutcontainer {
+    grid-template-columns: 1fr;
+  }
+}

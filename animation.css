@@ -1,0 +1,57 @@
+.portfolio-section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.project-row{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    background-color: #1f0e35;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.project-media{
+    flex: 1;
+}
+
+.project-media img,
+.project-media video{
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+.project-text{
+    flex: 1;
+}
+
+.project-text h2{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.project-text p{
+    color: #d9d9d9;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+
+    .project-row{
+        flex-direction: column;
+    }
+
+    .project-text{
+        text-align: center;
+    }
+}
