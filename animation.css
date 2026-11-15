@@ -59,9 +59,10 @@
 .video-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 80px;
 }
+
 
 .video-wrapper video {
     width: 90%;
