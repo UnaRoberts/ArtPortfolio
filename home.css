@@ -17,25 +17,23 @@
   
 }
 
+a {
+    font-size: 50px;
+    text-decoration: none;
 
-a{
-  font-size: 50px;
-  text-decoration: none;  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px;
 
-  border-radius: 20px;
-  text-align: center;
-  padding: 50px;
+    display: block;
+    width: min(80%, 600px);
 
-  
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 600px;
-  margin-right:  600px;
-}   
+    margin: 10px auto;
+}
 
 .animation-link {
     background-image: url("img_home/Animation.png"); 

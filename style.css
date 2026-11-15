@@ -10,17 +10,38 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-background-color: #ffffff;
-text-align: center;
-      
-margin: 20px;
-margin-left:450px;
-margin-right: 450px;
-padding: 10px;
-border-radius: 20px;
-font-size: 30px;
 
+header h1 {
+    margin: 0;
+    font-size: clamp(3rem, 6vw, 5rem);
+}
+
+header {
+    width: fit-content;
+    margin: 20px auto;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.header-link {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    background: none;
+
+    color: black;
+    text-decoration: none;
+
+    font-size: inherit;
+}
+
+.header-link:hover {
+    background: none;
+    color: black;
+    transform: none;
+    box-shadow: none;
 }
 
 
